@@ -1,0 +1,25 @@
+# BMI Calculator
+# Formula for BMI weight in lbs * 703 / height in inch**2
+
+print "Enter your height in inches: "
+
+height = gets.to_i
+
+print "Enter your weight in lbs: "
+
+weight = gets.to_i
+
+bmi = (weight*703) / (height**2)
+
+puts "your BMI is: #{bmi}"
+if bmi < 16
+	puts "seriously underweght"
+elsif bmi >= 16 and bmi <=18
+	puts "you are underwieght"
+	
+elsif bmi >= 19 and bmi <= 24
+	puts "your weight is normal"
+	
+end
+
+
